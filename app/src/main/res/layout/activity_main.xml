@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8F2E2E"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_alignParentTop="true"
+        android:layout_width="60dp"
+        android:id="@+id/back_btn"
+        android:src="@mipmap/ic_launcher_round"
+        android:layout_height="60dp"/>
+    <TextView
+        android:layout_toRightOf="@+id/back_btn"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Awesome app"/>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1F5ACF"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="#EDD73F"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:id="@+id/tv2"
+            android:layout_width="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv1" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/button"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click ME!!"/>
+    <Button
+        android:id="@+id/bt2"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Saved Photo"/>
+
+
+</LinearLayout>
